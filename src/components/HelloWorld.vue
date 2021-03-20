@@ -107,6 +107,7 @@ export default {
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
+  background-color: $black;
 }
 ul {
   list-style-type: none;
