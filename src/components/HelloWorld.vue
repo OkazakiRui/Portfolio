@@ -107,6 +107,8 @@ export default {
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
+  background-color: red;
+  background-color: blue;
   background-color: $black;
 }
 ul {
