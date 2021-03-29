@@ -1,5 +1,5 @@
 <template>
-  <header class="f-alibet">
+  <header class="f-alibet p-fi">
     <h1 class="logo">
       <span class="c-p">&lt;</span> ruru’s portfolio
       <span class="c-p">/&gt;</span>
@@ -26,8 +26,8 @@ header {
   height: 64px;
   font-size: 2.2rem;
   font-weight: bold;
-  position: absolute;
   top: 0;
+  z-index: 100;
   margin: 0 30px;
 }
 h1 {

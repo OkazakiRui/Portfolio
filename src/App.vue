@@ -13,6 +13,14 @@ html {
   font-size: 62.5%;
   background-color: $black1;
   color: $white1;
+
+  height: 3000px;
+}
+header,
+main,
+footer {
+  min-width: 960px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
