@@ -1,3 +1,40 @@
 // 色系統
 $black1: #110e17;
 $white1: #f2f2f2;
+$purple1: #5918df;
+$gray1: #988e9f;
+
+// 文字色
+.c-p {
+  color: $purple1;
+}
+.c-g {
+  color: $gray1;
+}
+
+// レイアウト
+.flex {
+  display: flex;
+}
+.f-ali {
+  display: flex;
+  align-items: center;
+}
+.f-jus {
+  display: flex;
+  justify-content: center;
+}
+.f-cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-bet {
+  display: flex;
+  justify-content: space-between;
+}
+.f-alibet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

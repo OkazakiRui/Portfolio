@@ -16,5 +16,6 @@ export default {
 <style scoped lang="scss">
 .firstview {
   height: 100vh;
+  padding-top: 64px;
 }
 </style>
