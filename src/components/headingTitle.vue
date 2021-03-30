@@ -20,20 +20,5 @@ export default {
   color: $gray1;
   font-weight: normal;
   position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -28px;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    border: 2px solid $purple1;
-    border-radius: 50%;
-    filter: drop-shadow(0px 0px 4px #000000);
-  }
 }
 </style>
