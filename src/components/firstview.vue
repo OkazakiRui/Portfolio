@@ -44,24 +44,6 @@ export default {
     filter: drop-shadow(0px 0px 4px #000000);
     z-index: 5;
   }
-  &::after {
-    content: "";
-    display: block;
-    width: 17.5px;
-    height: 26px;
-    background-image: url(../assets/svg/mouse.svg);
-    left: -9.7px;
-    bottom: 65px;
-  }
-  &::before {
-    content: "SCROLL";
-    font-size: 1.4rem;
-    font-weight: bold;
-    transform: rotate(-90deg);
-    bottom: 20px;
-    left: -24px;
-    color: $gray1;
-  }
 }
 h3 {
   font-size: 4.8rem;
