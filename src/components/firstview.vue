@@ -7,7 +7,7 @@
         Hi, my name is <span class="c-p">Rui Okazaki</span><br />I'm a Front End
         Developer<span class="c-p">.</span>
       </h3>
-      <p class="c-g text">I will show you.</p>
+      <p class="c-g text">I want you to know about me.</p>
     </div>
   </div>
 </template>
@@ -60,6 +60,7 @@ export default {
     transform: rotate(-90deg);
     bottom: 20px;
     left: -24px;
+    color: $gray1;
   }
 }
 h3 {
@@ -70,5 +71,6 @@ h3 {
 .text {
   margin-top: 35px;
   font-size: 2.4rem;
+  font-weight: bold;
 }
 </style>
