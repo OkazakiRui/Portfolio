@@ -8,6 +8,6 @@
   width: 2px;
   background-color: $purple1;
   left: -2px;
-  top: 30px;
+  top: 15px;
 }
 </style>
