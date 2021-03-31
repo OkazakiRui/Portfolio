@@ -66,6 +66,7 @@ export default {
 h3 {
   font-size: 4.8rem;
   line-height: 68px;
+  margin-top: 27px;
 }
 .text {
   margin-top: 35px;
