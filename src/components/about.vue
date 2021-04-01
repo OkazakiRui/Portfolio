@@ -5,9 +5,11 @@
       <heading-title title="About"></heading-title>
       <div class="content f-alibet">
         <div class="content__left">
-          <h3>RUI OKAZAKI</h3>
-          <p class="school">ECCコンピュータ専門学校 WEBデザイナー専攻2年</p>
-          <p>
+          <p class="content__left__school c-g">
+            ECCコンピュータ専門学校 WEBデザイナー専攻2年
+          </p>
+          <h3 class="content__left__name">RUI OKAZAKI</h3>
+          <p class="content__left__text">
             私は人の笑顔を見るのが好きです。<br />
             将来は今勉強しているwebの知識を使って人を笑顔にそして幸せにできる仕事につきたいです。<br />
             人を幸せにする仕事にフロントエンドが必要ならフロントエンドを勉強し続けます、バックエンドの技術が必要な時はバックエンドを勉強します。<br />
@@ -17,9 +19,23 @@
           </p>
         </div>
         <div class="content__right">
-          <figure>
+          <figure class="content__right__img shadow">
             <img src="../assets/images/myself.jpg" alt="岡崎流依の写真" />
           </figure>
+          <div class="content__right__links f-bet">
+            <a href="#" class="content__right__link shadow f-ali c-p"
+              ><figure class="f-cen content__right__link__icon">
+                <img src="../assets/svg/github.svg" alt="github" />
+              </figure>
+              OkazakiRui</a
+            >
+            <a href="#" class="content__right__link shadow f-ali c-p"
+              ><figure class="f-cen content__right__link__icon">
+                <img src="../assets/svg/instagram.svg" alt="instagram" />
+              </figure>
+              asahanemutaiyo</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -38,35 +54,52 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
-  font-weight: bold;
-  font-size: 4.2rem;
-  line-height: 49px;
-  letter-spacing: 10px;
-}
-p {
-  font-size: 1.4rem;
-  line-height: 28px;
-  text-align: justify;
-}
-.school {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .content {
   &__left {
     width: 487px;
+    &__name {
+      font-weight: bold;
+      font-size: 4.2rem;
+      line-height: 49px;
+      letter-spacing: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 1.4rem;
+      line-height: 28px;
+      text-align: justify;
+    }
+
+    &__school {
+      font-size: 1.4rem;
+      // margin-top: 10px;
+      // margin-bottom: 10px;
+    }
   }
   &__right {
-    width: 250px;
-    figure {
+    // width: 250px;
+    width: 300px;
+    &__img {
       width: 100%;
       img {
         width: 100%;
-        border-radius: 50%;
-        border: 2px solid $white1;
+        border-radius: 36px;
+      }
+    }
+    &__links {
+      margin: 10px 15px 0 15px;
+    }
+    &__link {
+      font-size: 1.8rem;
+      line-height: 21px;
+      &__icon {
+        margin-right: 5px;
       }
     }
   }
+}
+.shadow {
+  filter: drop-shadow(0px 0px 4px #000000);
 }
 </style>

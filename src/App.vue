@@ -25,6 +25,10 @@ footer {
 ul {
   list-style: none;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 // background styles
 .home > div:nth-of-type(odd) .background {

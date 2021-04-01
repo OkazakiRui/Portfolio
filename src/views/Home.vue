@@ -3,6 +3,7 @@
     <headerNav></headerNav>
     <firstview></firstview>
     <about></about>
+    <profile></profile>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import firstview from "@/components/firstview.vue";
 import headerNav from "@/components/headerNav.vue";
 import about from "@/components/about.vue";
+import profile from "@/components/profile.vue";
 
 export default {
   name: "Home",
@@ -18,6 +20,7 @@ export default {
     firstview,
     headerNav,
     about,
+    profile,
   },
 };
 </script>
