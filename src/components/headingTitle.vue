@@ -20,6 +20,7 @@ export default {
   color: $gray1;
   font-weight: normal;
   position: relative;
+  margin-bottom: 30px;
 
   &::before {
     content: "";

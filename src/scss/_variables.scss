@@ -52,10 +52,14 @@ $gray1: #988e9f;
 }
 
 // layout
-.content {
+.contentWrap {
   width: 868px;
   margin: 0 auto;
   padding: 75px 22px;
+}
+.content {
+  width: 100%;
+  height: 100%;
 }
 
 // font

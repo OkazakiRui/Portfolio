@@ -3,8 +3,6 @@
     <headerNav></headerNav>
     <firstview></firstview>
     <about></about>
-    <about></about>
-    <about></about>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="firstview f-ali">
-    <div class="content p-re">
+    <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
       <h3>
@@ -33,7 +33,7 @@ export default {
   min-height: 600px;
   padding-top: 64px;
 }
-.content {
+.contentWrap {
   padding: 0 22px;
   position: relative;
   min-height: 400px;
@@ -66,7 +66,7 @@ export default {
 h3 {
   font-size: 4.8rem;
   line-height: 68px;
-  margin-top: 27px;
+  margin-top: 30px;
 }
 .text {
   margin-top: 35px;
