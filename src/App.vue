@@ -25,4 +25,14 @@ footer {
 ul {
   list-style: none;
 }
+
+// background styles
+.home > div:nth-of-type(odd) .background {
+  background-color: $black1;
+  color: $black2;
+}
+.home > div:nth-of-type(even) .background {
+  background-color: $black2;
+  color: $black1;
+}
 </style>

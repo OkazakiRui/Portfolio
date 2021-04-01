@@ -1,5 +1,6 @@
 // 色系統
 $black1: #110e17;
+$black2: #14121c;
 $white1: #f2f2f2;
 $purple1: #5918df;
 $gray1: #988e9f;
@@ -55,4 +56,9 @@ $gray1: #988e9f;
   width: 868px;
   margin: 0 auto;
   padding: 75px 22px;
+}
+
+// font
+.font {
+  font-family: "Roboto Mono", monospace;
 }
