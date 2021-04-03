@@ -23,13 +23,19 @@
             <img src="../assets/images/myself.jpg" alt="岡崎流依の写真" />
           </figure>
           <div class="content__right__links f-bet">
-            <a href="#" class="content__right__link shadow f-ali c-p"
+            <a
+              href="https://github.com/OkazakiRui"
+              target="ruru"
+              class="content__right__link shadow f-ali c-p"
               ><figure class="f-cen content__right__link__icon">
                 <img src="../assets/svg/github.svg" alt="github" />
               </figure>
               OkazakiRui</a
             >
-            <a href="#" class="content__right__link shadow f-ali c-p"
+            <a
+              href="https://www.instagram.com/asahanemutaiyo/?hl=ja"
+              target="ruru"
+              class="content__right__link shadow f-ali c-p"
               ><figure class="f-cen content__right__link__icon">
                 <img src="../assets/svg/instagram.svg" alt="instagram" />
               </figure>
@@ -100,6 +106,7 @@ export default {
   }
 }
 .shadow {
+  filter: drop-shadow(0px 0px 4px #000000);
   filter: drop-shadow(0px 0px 4px #000000);
 }
 </style>

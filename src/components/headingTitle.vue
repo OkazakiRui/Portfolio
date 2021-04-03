@@ -26,6 +26,7 @@ export default {
     content: "";
     display: block;
     position: absolute;
+    z-index: 9;
     left: -28px;
     top: 50%;
     bottom: 50%;

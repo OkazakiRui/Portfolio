@@ -9,5 +9,6 @@
   background-color: $purple1;
   left: -2px;
   top: 15px;
+  z-index: 2;
 }
 </style>

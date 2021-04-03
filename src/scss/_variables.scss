@@ -67,3 +67,53 @@ $gray1: #988e9f;
 .font {
   font-family: "Roboto Mono", monospace;
 }
+
+// code
+#code {
+  .codeWrap {
+    position: relative;
+
+    &:hover {
+      background-color: #1a1526;
+      cursor: default;
+    }
+    // .paragraph {
+    //   position: absolute;
+    //   display: block;
+    //   width: 20px;
+    //   left: -60px;
+    //   font-size: 14px;
+    //   text-align: end;
+    //   z-index: 100;
+    // }
+
+    .code {
+      display: block;
+      width: 868px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+  }
+
+  .class {
+    color: #3691ff;
+  }
+  .className {
+    color: #ff6480;
+  }
+  .string {
+    color: #f9c859;
+  }
+  .number {
+    color: #ff78f8;
+  }
+  .methods {
+    color: #3fc56b;
+  }
+  .brackets {
+    color: #7a82da;
+  }
+  .property {
+    color: #ce9887;
+  }
+}
