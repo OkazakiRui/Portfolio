@@ -38,6 +38,8 @@ export default {
         /\u3000"/g,
         `\u3000<span class='code-string'>"`
       );
+      afterCode = afterCode.replace(/",/g, `"</span>,`);
+      afterCode = afterCode.replace(/";/g, `"</span>;`);
       afterCode = afterCode.replace(/"\u3000/g, `"</span>\u3000`);
       afterCode = afterCode.replace(
         /\u3000[0-9]*;/g,
