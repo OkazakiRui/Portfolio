@@ -62,10 +62,6 @@ export default {
         `<span class='code-className'>$&</span>`
       );
       afterCode = afterCode.replace(
-        /return\u3000/g,
-        `<span class='code-className'>return\u3000</span>`
-      );
-      afterCode = afterCode.replace(
         /\(|\)|\[|\]|\u3000=|\{|\}/g,
         `<span class='code-brackets'>$&</span>`
       );
