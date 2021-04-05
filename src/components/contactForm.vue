@@ -3,17 +3,41 @@
     <form action="" method="post" class="contactForm mar">
       <div class="contactForm__col2Wrap f-bet">
         <div class="contactForm__col2 p-re">
-          <input type="text" id="name" class="floatLabel" name="name" />
-          <label class="contactForm__label p-ab" for="name">Name</label>
+          <input v-model="name" type="text" id="name" name="name" />
+          <label
+            :class="{
+              contactForm__label: true,
+              'p-ab': true,
+              labelup: name === '' ? false : true,
+            }"
+            for="name"
+            >Name</label
+          >
         </div>
         <div class="contactForm__col2 p-re">
-          <input type="email" id="email" class="floatLabel" name="email" />
-          <label class="contactForm__label p-ab" for="email">Email</label>
+          <input v-model="email" type="email" id="email" name="email" />
+          <label
+            :class="{
+              contactForm__label: true,
+              'p-ab': true,
+              labelup: email === '' ? false : true,
+            }"
+            for="email"
+            >Email</label
+          >
         </div>
       </div>
       <div class="contactForm__col1 p-re">
-        <textarea name="comments" class="floatLabel" id="comments"></textarea>
-        <label class="contactForm__label p-ab" for="comments">Comments</label>
+        <textarea v-model="comments" name="comments" id="comments"></textarea>
+        <label
+          :class="{
+            contactForm__label: true,
+            'p-ab': true,
+            labelup: comments === '' ? false : true,
+          }"
+          for="comments"
+          >Comments</label
+        >
       </div>
       <div class="contactForm__col1">
         <input type="submit" value="SEND" class="contactForm__submit" />
@@ -23,7 +47,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      name: "",
+      email: "",
+      comments: "",
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -53,10 +85,7 @@ export default {};
     font-size: 1rem;
   }
 
-  input:focus + &__label {
-    top: -20px;
-    font-size: 1rem;
-  }
+  input:focus + &__label,
   textarea:focus + &__label {
     top: -20px;
     font-size: 1rem;
