@@ -29,6 +29,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+input,
+textarea {
+  -webkit-appearance: none;
+}
+input,
+button,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 // background styles
 .home > div:nth-of-type(odd) .background {
