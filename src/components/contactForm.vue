@@ -1,7 +1,7 @@
 <template>
   <div>
     <form
-      action="http://localhost/sendmail.php"
+      action="http://click.ecc.ac.jp/ecc/rokazaki/sendmail.php"
       method="post"
       class="contactForm mar"
     >
