@@ -5,6 +5,7 @@ $black3: #1a1526;
 $white1: #f2f2f2;
 $purple1: #5918df;
 $gray1: #988e9f;
+$red1: #ff6480;
 
 // 文字色
 .c-p {
@@ -12,6 +13,9 @@ $gray1: #988e9f;
 }
 .c-g {
   color: $gray1;
+}
+.c-r {
+  color: $red1;
 }
 
 // flex
