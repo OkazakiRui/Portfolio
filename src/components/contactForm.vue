@@ -258,6 +258,10 @@ export default {
     font-size: 2.2rem;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     border-radius: 30px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 </style>
