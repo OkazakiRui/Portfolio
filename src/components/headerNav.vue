@@ -7,8 +7,9 @@
     <nav>
       <ul class="f-alibet c-g">
         <li>Start /&gt;</li>
-        <li>Works /&gt;</li>
+        <li>About /&gt;</li>
         <li>Profile /&gt;</li>
+        <li>Works /&gt;</li>
         <li>StudyRoom /&gt;</li>
         <li>Contact /&gt;</li>
       </ul>
