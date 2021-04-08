@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 .title {
   font-size: 1.8rem;
-  color: $gray1;
+  color: $pink1;
   font-weight: normal;
   position: relative;
   margin-bottom: 30px;
@@ -33,7 +33,7 @@ export default {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    border: 2px solid $purple1;
+    border: 2px solid $pink1;
     border-radius: 50%;
     filter: drop-shadow(0px 0px 4px #000000);
   }

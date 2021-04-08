@@ -233,7 +233,7 @@ export default {
   }
 
   .focusborder {
-    background-color: $purple1;
+    background-color: $pink1;
     width: 100%;
     height: 2px;
     bottom: 0;

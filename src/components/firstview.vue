@@ -60,7 +60,7 @@ export default {
     transform: rotate(-90deg);
     bottom: 20px;
     left: -24px;
-    color: $gray1;
+    color: $white1;
   }
 }
 h3 {

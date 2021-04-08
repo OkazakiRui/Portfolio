@@ -6,7 +6,7 @@
 .borderline {
   height: 4000px;
   width: 2px;
-  background-color: $purple1;
+  background-color: $pink1;
   left: -2px;
   top: 15px;
   z-index: 2;

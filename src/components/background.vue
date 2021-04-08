@@ -33,5 +33,7 @@ div {
 p {
   text-align: center;
   transform: rotate(-30deg);
+  -webkit-text-stroke: 1px $gray1;
+  opacity: 0.3;
 }
 </style>
