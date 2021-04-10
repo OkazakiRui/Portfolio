@@ -15,6 +15,7 @@ html {
   color: $white1;
 
   height: 3000px;
+  perspective: 1000px;
 }
 header,
 main,

@@ -36,5 +36,6 @@ h1 {
 }
 li {
   margin-left: 20px;
+  cursor: pointer;
 }
 </style>
