@@ -3,7 +3,7 @@
     <background title="Work"></background>
     <div class="contentWrap">
       <heading-title title="Work"></heading-title>
-      <div class="tiltWrap" data-tilt></div>
+      <div id="test" class="tiltWrap" data-tilt></div>
     </div>
   </div>
 </template>
@@ -23,7 +23,8 @@ export default {
       VanillaTilt.VanillaTilt();
     },
   },
-  created() {
+  mounted() {
+    console.log(document.getElementById("test"));
     this.VanillaTilt();
   },
 };
