@@ -12,6 +12,13 @@
         data-tilt-speed="400"
         data-tilt-perspective="500"
       ></div>
+      <div
+        id="test"
+        class="tiltWrap"
+        data-tilt
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      ></div>
     </div>
   </div>
 </template>
