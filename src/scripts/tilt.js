@@ -118,15 +118,7 @@ const VanillaTilt = function () {
               (this.betazero = (t.beta + this.lastbetazero) / 2)),
           (this.gyroscopeSamples -= 1));
       const e =
-          this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX,
-        i = this.settings.gyroscopeMaxAngleY - this.settings.gyroscopeMinAngleY,
-        s = e / this.width,
-        n = i / this.height,
-        l = (t.gamma - (this.settings.gyroscopeMinAngleX + this.gammazero)) / s,
-        a = (t.beta - (this.settings.gyroscopeMinAngleY + this.betazero)) / n;
-      null !== this.updateCall && cancelAnimationFrame(this.updateCall),
-        (this.event = { clientX: l + this.left, clientY: a + this.top }),
-        (this.updateCall = requestAnimationFrame(this.updateBind));
+        this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX;
     }
     onMouseEnter() {
       this.updateElementPosition(),
