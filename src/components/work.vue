@@ -4,6 +4,14 @@
     <div class="contentWrap">
       <heading-title title="Work"></heading-title>
       <div id="test" class="tiltWrap" data-tilt></div>
+      <div
+        id="test"
+        class="tiltWrap"
+        data-tilt
+        data-tilt-max="50"
+        data-tilt-speed="400"
+        data-tilt-perspective="500"
+      ></div>
     </div>
   </div>
 </template>
