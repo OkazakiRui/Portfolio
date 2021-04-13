@@ -13,9 +13,6 @@ html {
   font-size: 62.5%;
   background-color: $black1;
   color: $white1;
-
-  height: 3000px;
-  perspective: 1000px;
 }
 header,
 main,
@@ -51,5 +48,11 @@ select {
 .home > div:nth-of-type(even) .background {
   background-color: $black2;
   color: $black1;
+}
+
+figure,
+img {
+  width: 100%;
+  height: 100%;
 }
 </style>

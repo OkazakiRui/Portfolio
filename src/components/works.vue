@@ -4,9 +4,9 @@
     <div class="contentWrap">
       <heading-title title="Works"></heading-title>
       <div class="worksWrap f-bet">
-        <work></work>
-        <work></work>
-        <work></work>
+        <work :workData="innerPeaceCafe"></work>
+        <work :workData="nomino"></work>
+        <work :workData="spark"></work>
       </div>
     </div>
   </div>
@@ -20,7 +20,13 @@ export default {
   data() {
     return {
       innerPeaceCafe: {
-        logo: "",
+        logo: "../assets/svg/logo_IPC.svg",
+      },
+      nomino: {
+        logo: "../assets/svg/logo_nomino.svg",
+      },
+      spark: {
+        logo: "../assets/svg/logo_spark.svg",
       },
     };
   },

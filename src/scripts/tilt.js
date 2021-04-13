@@ -1,5 +1,5 @@
 const VanillaTilt = function () {
-  console.log("tilt");
+  // console.log("tilt");
   class t {
     constructor(e, i = {}) {
       if (!(e instanceof Node))
