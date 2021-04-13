@@ -21,12 +21,16 @@ export default {
     return {
       innerPeaceCafe: {
         logo: "/svg/logo_IPC.svg",
+        type: "WEB",
+        sc: "/images/ipc.jpg",
       },
       nomino: {
         logo: "/svg/logo_nomino.svg",
+        type: "APP",
       },
       spark: {
         logo: "/svg/logo_spark.svg",
+        type: "WEB",
       },
     };
   },
@@ -34,6 +38,11 @@ export default {
     background,
     headingTitle,
     work,
+  },
+  methods: {
+    mouseover(e) {
+      console.log(e);
+    },
   },
 };
 </script>

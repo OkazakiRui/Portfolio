@@ -1,10 +1,11 @@
 <template>
   <div class="work">
     <div
-      class="tiltWrap"
+      @mouseover="over"
+      @mouseleave="leave"
+      class="tiltWrap p-re"
       data-tilt
-      data-tilt-scale="1.1"
-      data-tilt-reverse="true"
+      data-tilt-scale="1.05"
     >
       <figure><img :src="workData.logo" /></figure>
     </div>
@@ -25,6 +26,12 @@ export default {
     VanillaTilt() {
       VanillaTilt.VanillaTilt();
     },
+    over() {
+      console.log("over");
+    },
+    leave() {
+      console.log("leave");
+    },
   },
   mounted() {
     this.VanillaTilt();
@@ -35,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 .work {
   perspective: 1000px;
+  cursor: pointer;
 }
 .tiltWrap {
   display: flex;
@@ -42,7 +50,13 @@ export default {
 
   width: 320px;
   height: 180px;
+
   background-color: $white1;
+  border-radius: 40px;
+
+  // border: $pink1 10px double;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
   figure {
     transform: translateZ(50px);
