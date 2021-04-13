@@ -4,7 +4,7 @@
     <firstview></firstview>
     <about></about>
     <profile></profile>
-    <work></work>
+    <works></works>
     <!-- studyRoom -->
     <contact></contact>
   </div>
@@ -16,7 +16,7 @@ import firstview from "@/components/firstview.vue";
 import headerNav from "@/components/headerNav.vue";
 import about from "@/components/about.vue";
 import profile from "@/components/profile.vue";
-import work from "@/components/work.vue";
+import works from "@/components/works.vue";
 import contact from "@/components/contact.vue";
 
 export default {
@@ -26,7 +26,7 @@ export default {
     headerNav,
     about,
     profile,
-    work,
+    works,
     contact,
   },
 };
