@@ -22,7 +22,6 @@ export default {
       innerPeaceCafe: {
         logo: "/svg/logo_IPC.svg",
         type: "WEB",
-        sc: "/images/ipc.jpg",
       },
       nomino: {
         logo: "/svg/logo_nomino.svg",
