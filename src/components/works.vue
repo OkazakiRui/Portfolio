@@ -20,13 +20,13 @@ export default {
   data() {
     return {
       innerPeaceCafe: {
-        logo: "../assets/svg/logo_IPC.svg",
+        logo: "/svg/logo_IPC.svg",
       },
       nomino: {
-        logo: "../assets/svg/logo_nomino.svg",
+        logo: "/svg/logo_nomino.svg",
       },
       spark: {
-        logo: "../assets/svg/logo_spark.svg",
+        logo: "/svg/logo_spark.svg",
       },
     };
   },
