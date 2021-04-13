@@ -25,29 +25,9 @@ export default {
     VanillaTilt() {
       VanillaTilt.VanillaTilt();
     },
-    // loadImg() {
-    //   console.log(`../assets/svg/${this.workData.logo}`);
-    //   return `../assets/svg/${this.workData.logo}`;
-    // },
   },
   mounted() {
     this.VanillaTilt();
-    // const workImg = document.querySelectorAll(
-    //   "h2 + div > div > div > figure > img"
-    // );
-    // const url = () => {
-    //   return workImg[0].src.indexOf("svg") === -1 ? workImg[0].src :
-    // };
-
-    // const url = workImg[workImg.length - 1].src;
-    // console.log(workImg[workImg.length - 1].src);
-
-    // for (let i = 0; i < workImg.length; i++) {
-    //   if (workImg[i].src === url) {
-    //     workImg[i].src = url + this.workData.logo;
-    //     return;
-    //   }
-    // }
   },
 };
 </script>
