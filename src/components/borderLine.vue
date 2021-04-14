@@ -1,24 +1,14 @@
 <template>
-  <div class="borderline p-ab" id="border"></div>
+  <div class="borderline p-ab"></div>
 </template>
 
 <script>
-export default {
-  methods: {
-    heightSettings() {
-      const border = document.getElementById("border");
-      const bodyHeight = document.querySelector("body").offsetHeight;
-      border.style.height = bodyHeight + "px";
-    },
-  },
-  mounted() {
-    this.heightSettings();
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 .borderline {
+  height: 10000px;
   width: 2px;
   background-color: $pink1;
   left: -2px;

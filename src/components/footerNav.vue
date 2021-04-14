@@ -1,7 +1,17 @@
 <template>
   <footer class="footer p-re">
-    <div class="footer__content p-ab">
-      <p class="p-ab"><small>&copy; 2021 RUI OKAZAKI</small></p>
+    <div class="contentWrap">
+      <p class="footer__copy f-alibet p-ab">
+        <small class="font c-g">&copy; 2021 RUI OKAZAKI</small>
+      </p>
+      <div class="footer__links f-alibet p-ab mar">
+        <a href="https://github.com/OkazakiRui" target="ruru"
+          ><img src="@/assets/svg/github.svg"
+        /></a>
+        <a href="https://twitter.com/ruru_FrontEnd" target="ruru"
+          ><img src="@/assets/svg/twitter.svg"
+        /></a>
+      </div>
     </div>
   </footer>
 </template>
@@ -13,10 +23,22 @@ export default {};
 <style lang="scss" scoped>
 .footer {
   height: 0px;
-  &__content {
-    font-size: 2rem;
-    top: -24px;
+  &__copy,
+  &__links {
+    height: 50px;
+  }
+  &__copy {
+    top: -50px;
     width: 100%;
+    small {
+      font-size: 1.2rem;
+    }
+  }
+  &__links {
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 50px;
   }
 }
 </style>
