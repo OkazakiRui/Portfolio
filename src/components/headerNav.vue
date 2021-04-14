@@ -1,5 +1,5 @@
 <template>
-  <header class="f-alibet p-fi">
+  <header class="header f-alibet p-fi">
     <h1 class="logo">
       <span class="c-p">&lt;</span> ruru’s portfolio
       <span class="c-p">/&gt;</span>

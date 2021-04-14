@@ -4,7 +4,7 @@
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
       <h3>
-        Hi, my name is <span class="c-p">Rui Okazaki</span><br />I'm a Front End
+        Hi, I'm <span class="c-p">Rui Okazaki</span><br />I'm a Front End
         Developer<span class="c-p">.</span>
       </h3>
       <p class="c-g text">I want you to know about me.</p>
