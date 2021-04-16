@@ -5,7 +5,7 @@
     <about></about>
     <profile></profile>
     <works></works>
-    <!-- studyRoom -->
+    <studyroom></studyroom>
     <contact></contact>
     <footerNav></footerNav>
   </div>
@@ -18,6 +18,7 @@ import headerNav from "@/components/headerNav.vue";
 import about from "@/components/about.vue";
 import profile from "@/components/profile.vue";
 import works from "@/components/works.vue";
+import studyroom from "@/components/studyroom.vue";
 import contact from "@/components/contact.vue";
 import footerNav from "@/components/footerNav.vue";
 
@@ -29,6 +30,7 @@ export default {
     about,
     profile,
     works,
+    studyroom,
     contact,
     footerNav,
   },
