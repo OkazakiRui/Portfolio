@@ -10,7 +10,7 @@
         <li>About /&gt;</li>
         <li>Profile /&gt;</li>
         <li>Works /&gt;</li>
-        <li>StudyRoom /&gt;</li>
+        <!-- <li>StudyRoom /&gt;</li> -->
         <li>Contact /&gt;</li>
       </ul>
     </nav>
