@@ -8,6 +8,7 @@
     <!-- <studyroom></studyroom> -->
     <contact></contact>
     <footerNav></footerNav>
+    <scrollbar></scrollbar>
   </div>
 </template>
 
@@ -21,6 +22,8 @@ import works from "@/components/works.vue";
 // import studyroom from "@/components/studyroom.vue";
 import contact from "@/components/contact.vue";
 import footerNav from "@/components/footerNav.vue";
+// other
+import scrollbar from "@/components/scrollbar.vue";
 
 export default {
   name: "Home",
@@ -33,6 +36,7 @@ export default {
     // studyroom,
     contact,
     footerNav,
+    scrollbar,
   },
 };
 </script>

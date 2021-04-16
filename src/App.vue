@@ -40,6 +40,11 @@ select {
   appearance: none;
 }
 
+// scrollbar
+::-webkit-scrollbar {
+  width: 0;
+}
+
 // background styles
 .home > div:nth-of-type(odd) .background {
   background-color: $black1;
@@ -58,5 +63,6 @@ img {
 
 #app {
   overflow: hidden;
+  padding-right: 4px;
 }
 </style>
