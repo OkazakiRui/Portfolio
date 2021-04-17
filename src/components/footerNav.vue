@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer p-re">
-    <div class="contentWrap">
+  <footer class="footer">
+    <div class="contentWrap p-re">
       <p class="footer__copy f-alibet p-ab">
         <small class="font c-g">&copy; 2021 RUI OKAZAKI</small>
       </p>
@@ -40,5 +40,8 @@ export default {};
     right: 0;
     width: 50px;
   }
+}
+footer > .contentWrap {
+  padding: 0 22px;
 }
 </style>

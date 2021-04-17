@@ -33,6 +33,10 @@ export default {
   min-height: 600px;
   padding-top: 64px;
 }
+.borderline {
+  height: 2500px;
+  top: 15px;
+}
 .contentWrap {
   padding: 0 22px;
   position: relative;
