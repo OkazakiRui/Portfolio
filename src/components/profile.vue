@@ -1,5 +1,5 @@
 <template>
-  <div class="profile p-re">
+  <div id="profile" class="profile p-re">
     <background title="Profile"></background>
     <div class="contentWrap">
       <heading-title title="Profile"></heading-title>

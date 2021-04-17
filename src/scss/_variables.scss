@@ -123,4 +123,7 @@ $red1: #ff6480;
 // header Nav
 .lookingSection {
   color: $white1;
+  transition: all 0.5s;
+  &::after {
+  }
 }

@@ -6,12 +6,22 @@
     </h1>
     <nav>
       <ul class="f-alibet c-g">
-        <li class="header__lists">Start /&gt;</li>
-        <li class="header__lists">About /&gt;</li>
-        <li class="header__lists">Profile /&gt;</li>
-        <li class="header__lists">Works /&gt;</li>
-        <!-- <li class="header__lists">StudyRoom /&gt;</li> -->
-        <li class="header__lists">Contact /&gt;</li>
+        <li class="header__lists" @click="scrollToSection('start')">
+          Start /&gt;
+        </li>
+        <li class="header__lists" @click="scrollToSection('about')">
+          About /&gt;
+        </li>
+        <li class="header__lists" @click="scrollToSection('profile')">
+          Profile /&gt;
+        </li>
+        <li class="header__lists" @click="scrollToSection('works')">
+          Works /&gt;
+        </li>
+        <!-- <li class="header__lists" @click="scrollToSection('studyRoom')">StudyRoom /&gt;</li> -->
+        <li class="header__lists" @click="scrollToSection('contact')">
+          Contact /&gt;
+        </li>
       </ul>
     </nav>
   </header>
@@ -30,10 +40,14 @@ export default {
     window.addEventListener("scroll", this.scrollAction);
   },
   methods: {
+    scrollToSection(id) {
+      const el = document.getElementById(id);
+      el.scrollIntoView({ behavior: "smooth" });
+    },
     getElNames() {
       const lists = document.querySelectorAll(".header__lists");
       lists.forEach((el) => {
-        this.elNames.push(el.textContent.split(" ")[0].toLowerCase());
+        this.elNames.push(el.textContent.split(" ")[1].toLowerCase());
       });
     },
     scrollAction() {

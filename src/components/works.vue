@@ -1,5 +1,5 @@
 <template>
-  <div class="works p-re">
+  <div id="works" class="works p-re">
     <background title="Works"></background>
     <div class="contentWrap">
       <heading-title title="Works"></heading-title>

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact p-re f-cen">
+  <div id="contact" class="contact p-re f-cen">
     <background title="Contact"></background>
     <div class="contentWrap">
       <heading-title title="Contact"></heading-title>

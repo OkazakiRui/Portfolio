@@ -9,10 +9,10 @@
         <div class="contactForm__col2 p-re">
           <input
             @keypress="nameenter"
-            ref="name"
+            id="name"
             v-model="name"
             type="text"
-            id="name"
+            ref="name"
             name="name"
           />
           <label
@@ -30,10 +30,10 @@
         <div class="contactForm__col2 p-re">
           <input
             @keypress="emailenter"
-            ref="email"
+            id="email"
             v-model="email"
             type="email"
-            id="email"
+            ref="email"
             name="email"
           />
           <label
@@ -53,8 +53,8 @@
         <textarea
           v-model="comments"
           name="comments"
-          ref="comments"
           id="comments"
+          ref="comments"
           :style="autoHeight"
         ></textarea>
         <label

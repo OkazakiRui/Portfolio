@@ -62,7 +62,7 @@ img {
 }
 
 #app {
-  overflow: hidden;
+  // overflow: hidden;
   padding-right: 4px;
 }
 </style>

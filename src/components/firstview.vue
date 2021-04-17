@@ -1,5 +1,5 @@
 <template>
-  <div class="start f-ali">
+  <div id="start" class="start f-ali">
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
