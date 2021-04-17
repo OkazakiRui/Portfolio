@@ -1,5 +1,5 @@
 <template>
-  <div class="firstview f-ali">
+  <div class="start f-ali">
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
@@ -28,7 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.firstview {
+.start {
   height: 100vh;
   min-height: 600px;
   padding-top: 64px;

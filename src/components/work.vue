@@ -1,12 +1,6 @@
 <template>
   <div class="work">
-    <div
-      @mouseover="over"
-      @mouseleave="leave"
-      class="tiltWrap p-re"
-      data-tilt
-      data-tilt-scale="1.05"
-    >
+    <div class="tiltWrap p-re" data-tilt data-tilt-scale="1.05">
       <figure><img :src="workData.logo" /></figure>
     </div>
   </div>
@@ -25,12 +19,6 @@ export default {
   methods: {
     VanillaTilt() {
       VanillaTilt.VanillaTilt();
-    },
-    over() {
-      console.log("over");
-    },
-    leave() {
-      console.log("leave");
     },
   },
   mounted() {

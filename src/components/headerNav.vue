@@ -6,19 +6,78 @@
     </h1>
     <nav>
       <ul class="f-alibet c-g">
-        <li>Start /&gt;</li>
-        <li>About /&gt;</li>
-        <li>Profile /&gt;</li>
-        <li>Works /&gt;</li>
-        <!-- <li>StudyRoom /&gt;</li> -->
-        <li>Contact /&gt;</li>
+        <li class="header__lists">Start /&gt;</li>
+        <li class="header__lists">About /&gt;</li>
+        <li class="header__lists">Profile /&gt;</li>
+        <li class="header__lists">Works /&gt;</li>
+        <!-- <li class="header__lists">StudyRoom /&gt;</li> -->
+        <li class="header__lists">Contact /&gt;</li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      elNames: [],
+      elHeights: [],
+    };
+  },
+  mounted() {
+    this.getElNames();
+    window.addEventListener("scroll", this.scrollAction);
+  },
+  methods: {
+    getElNames() {
+      const lists = document.querySelectorAll(".header__lists");
+      lists.forEach((el) => {
+        this.elNames.push(el.textContent.split(" ")[0].toLowerCase());
+      });
+    },
+    scrollAction() {
+      this.getElHeight();
+      this.changeColors();
+    },
+    getElHeight() {
+      this.elHeights = [];
+      for (let i = 0; i < this.elNames.length; i++) {
+        let total = 0;
+        for (let j = 0; j < i; j++) {
+          total =
+            total + document.querySelector("." + this.elNames[j]).offsetHeight;
+        }
+        this.elHeights.push(
+          total + document.querySelector("." + this.elNames[i]).offsetHeight
+        );
+      }
+    },
+    changeColors() {
+      const user = window.pageYOffset;
+      const lists = document.querySelectorAll(".header__lists");
+      if (user < this.elHeights[0]) {
+        lists[0].classList.add("lookingSection");
+        lists[1].classList.remove("lookingSection");
+      } else if (user < this.elHeights[1]) {
+        lists[0].classList.remove("lookingSection");
+        lists[1].classList.add("lookingSection");
+        lists[2].classList.remove("lookingSection");
+      } else if (user < this.elHeights[2]) {
+        lists[1].classList.remove("lookingSection");
+        lists[2].classList.add("lookingSection");
+        lists[3].classList.remove("lookingSection");
+      } else if (user < this.elHeights[3]) {
+        lists[2].classList.remove("lookingSection");
+        lists[3].classList.add("lookingSection");
+        lists[4].classList.remove("lookingSection");
+      } else if (user < this.elHeights[4]) {
+        lists[3].classList.remove("lookingSection");
+        lists[4].classList.add("lookingSection");
+      }
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
