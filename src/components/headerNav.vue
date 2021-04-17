@@ -6,21 +6,24 @@
     </h1>
     <nav>
       <ul class="f-alibet c-g">
-        <li class="header__lists" @click="scrollToSection('start')">
-          Start /&gt;
+        <li
+          class="header__lists lookingSection"
+          @click="scrollToSection('start')"
+        >
+          Start <span>/&gt;</span>
         </li>
         <li class="header__lists" @click="scrollToSection('about')">
-          About /&gt;
+          About <span>/&gt;</span>
         </li>
         <li class="header__lists" @click="scrollToSection('profile')">
-          Profile /&gt;
+          Profile <span>/&gt;</span>
         </li>
         <li class="header__lists" @click="scrollToSection('works')">
-          Works /&gt;
+          Works <span>/&gt;</span>
         </li>
-        <!-- <li class="header__lists" @click="scrollToSection('studyRoom')">StudyRoom /&gt;</li> -->
+        <!-- <li class="header__lists" @click="scrollToSection('studyRoom')">StudyRoom <span>/&gt;</span></li> -->
         <li class="header__lists" @click="scrollToSection('contact')">
-          Contact /&gt;
+          Contact <span>/&gt;</span>
         </li>
       </ul>
     </nav>
@@ -78,16 +81,21 @@ export default {
         lists[1].classList.add("lookingSection");
         lists[2].classList.remove("lookingSection");
       } else if (user < this.elHeights[2]) {
+        lists[0].classList.remove("lookingSection");
         lists[1].classList.remove("lookingSection");
         lists[2].classList.add("lookingSection");
         lists[3].classList.remove("lookingSection");
       } else if (user < this.elHeights[3]) {
+        lists[0].classList.remove("lookingSection");
         lists[2].classList.remove("lookingSection");
         lists[3].classList.add("lookingSection");
         lists[4].classList.remove("lookingSection");
       } else if (user < this.elHeights[4]) {
+        lists[0].classList.remove("lookingSection");
         lists[3].classList.remove("lookingSection");
         lists[4].classList.add("lookingSection");
+      } else {
+        alert("err");
       }
     },
   },
@@ -110,5 +118,10 @@ h1 {
 li {
   margin-left: 20px;
   cursor: pointer;
+  // transition: all 0.3s;
+  &:hover {
+    color: $white1;
+    opacity: 0.75;
+  }
 }
 </style>
