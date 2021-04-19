@@ -3,9 +3,9 @@
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
-      <h3>
-        Hi, I'm <span class="c-p">Rui Okazaki</span><br />I'm a Front End
-        Developer<span class="c-p">.</span>
+      <h3 class="mv-bg mv-w">
+        Hi, I'm <span class="c-p mv-p">Rui Okazaki</span><br />I'm a Front End
+        Developer<span class="c-p mv-p">.</span>
       </h3>
       <p class="c-g text">I want you to know about me.</p>
     </div>

@@ -128,3 +128,61 @@ $red1: #ff6480;
     color: $pink1;
   }
 }
+
+// movement bg
+@keyframes move-bg {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(101%, 0);
+  }
+}
+
+@keyframes move-color-white {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: $white1;
+  }
+}
+@keyframes move-color-pink {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: $pink1;
+  }
+}
+
+.mv-bg {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  // height: 125px;
+  // transition: color 0.5s;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    background: $pink1;
+    transform: translate(100%, 0);
+    animation: move-bg 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+  }
+}
+.mv-w {
+  animation: move-color-white 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+}
+.mv-p {
+  animation: move-color-pink 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+}
