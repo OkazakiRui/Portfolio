@@ -169,7 +169,7 @@ $red1: #ff6480;
 }
 
 .mv-bg {
-  display: inline-block;
+  display: table;
   position: relative;
   overflow: hidden;
   &::after {
