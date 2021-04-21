@@ -159,13 +159,19 @@ $red1: #ff6480;
     color: $pink1;
   }
 }
+@keyframes move-color-gray {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: $gray1;
+  }
+}
 
 .mv-bg {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  // height: 125px;
-  // transition: color 0.5s;
   &::after {
     content: "";
     display: block;
@@ -184,4 +190,7 @@ $red1: #ff6480;
 }
 .mv-p {
   animation: move-color-pink 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+}
+.mv-g {
+  animation: move-color-gray 1.2s cubic-bezier(0.8, 0, 0.2, 1);
 }

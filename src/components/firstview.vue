@@ -7,7 +7,7 @@
         Hi, I'm <span class="c-p mv-p">Rui Okazaki</span><br />I'm a Front End
         Developer<span class="c-p mv-p">.</span>
       </h3>
-      <p class="c-g text">I want you to know about me.</p>
+      <p class="c-g text mv-bg mv-g">I want you to know about me.</p>
     </div>
   </div>
 </template>
