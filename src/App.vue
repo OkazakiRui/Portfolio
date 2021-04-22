@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @mousemove="mousemove">
+  <div id="app">
     <router-view />
   </div>
 </template>

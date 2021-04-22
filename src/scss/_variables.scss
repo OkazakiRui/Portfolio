@@ -185,8 +185,10 @@ $red1: #ff6480;
     bottom: 0;
     background: $pink1;
     transform: translate(100%, 0);
-    animation: move-bg 1.2s cubic-bezier(0.8, 0, 0.2, 1);
   }
+}
+.is-animation::after {
+  animation: move-bg 1.2s cubic-bezier(0.8, 0, 0.2, 1);
 }
 .mv-w {
   animation: move-color-white 1.2s cubic-bezier(0.8, 0, 0.2, 1);
