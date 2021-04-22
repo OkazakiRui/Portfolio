@@ -17,6 +17,9 @@ $red1: #ff6480;
 .c-r {
   color: $red1;
 }
+.c-t {
+  color: transparent;
+}
 
 // flex
 .flex {
@@ -188,14 +191,45 @@ $red1: #ff6480;
   }
 }
 .is-animation::after {
-  animation: move-bg 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+  animation-name: move-bg;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  animation-fill-mode: forwards;
 }
 .mv-w {
-  animation: move-color-white 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+  animation-name: move-color-white;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  animation-fill-mode: forwards;
 }
 .mv-p {
-  animation: move-color-pink 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+  animation-name: move-color-pink;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  animation-fill-mode: forwards;
 }
 .mv-g {
-  animation: move-color-gray 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+  animation-name: move-color-gray;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+
+.delay1 {
+  animation-delay: 0.2s;
+  &::after {
+    animation-delay: 0.2s;
+  }
+}
+.delay2 {
+  animation-delay: 0.4s;
+  &::after {
+    animation-delay: 0.4s;
+  }
+}
+.delay3 {
+  animation-delay: 0.6s;
+  &::after {
+    animation-delay: 0.6s;
+  }
 }

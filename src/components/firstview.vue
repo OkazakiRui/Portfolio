@@ -3,11 +3,11 @@
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
-      <h3 class="mv-bg mv-w is-animation">
-        Hi, I'm <span class="c-p mv-p">Rui Okazaki</span><br />I'm a Front End
-        Developer<span class="c-p mv-p">.</span>
+      <h3 class="mv-bg c-t mv-w is-animation delay2">
+        Hi, I'm <span class="c-t mv-p delay2">Rui Okazaki</span><br />I'm a
+        Front End Developer<span class="c-t mv-p delay2">.</span>
       </h3>
-      <p class="c-g text mv-bg mv-g is-animation">
+      <p class="c-t text mv-bg mv-g is-animation delay3">
         I want you to know about me.
       </p>
     </div>
