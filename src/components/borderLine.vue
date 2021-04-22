@@ -7,5 +7,7 @@
   background-color: $pink1;
   left: -2px;
   z-index: 2;
+  height: 3000px;
+  top: 15px;
 }
 </style>

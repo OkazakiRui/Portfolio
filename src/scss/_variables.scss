@@ -144,7 +144,8 @@ $red1: #ff6480;
 }
 
 @keyframes move-color-white {
-  0% {
+  0%,
+  30% {
     color: transparent;
   }
   100% {
@@ -152,7 +153,8 @@ $red1: #ff6480;
   }
 }
 @keyframes move-color-pink {
-  0% {
+  0%,
+  30% {
     color: transparent;
   }
   100% {
@@ -160,7 +162,8 @@ $red1: #ff6480;
   }
 }
 @keyframes move-color-gray {
-  0% {
+  0%,
+  30% {
     color: transparent;
   }
   100% {
