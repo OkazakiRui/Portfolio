@@ -5,17 +5,30 @@
       <heading-title title="About"></heading-title>
       <div class="content f-alibet">
         <div class="content__left">
-          <p class="content__left__school c-g">
-            ECCコンピュータ専門学校 WEBデザイナー専攻2年
-          </p>
-          <h3 class="content__left__name">RUI OKAZAKI</h3>
-          <p class="content__left__text">
-            私は人の笑顔を見るのが好きです。<br />
-            将来は今勉強しているwebの知識を使って人を笑顔にそして幸せにできる仕事につきたいです。<br />
-            人を幸せにする仕事にフロントエンドが必要ならフロントエンドを勉強し続けます、バックエンドの技術が必要な時はバックエンドを勉強します。<br />
-            私にとってプログラミングは趣味であり、目的を達成する手段でしかありません。<br />
-            ですので、今はwebについて勉強していますが、趣味が変わってアプリが作りたくなった時は、その分野で人を笑顔にしたいと考えています。
-          </p>
+          <vue-typed-js
+            :strings="school"
+            :contentType="'html'"
+            :showCursor="false"
+            :typeSpeed="20"
+          >
+            <p class="typing content__left__school c-g"></p>
+          </vue-typed-js>
+          <vue-typed-js
+            :strings="name"
+            :contentType="'html'"
+            :showCursor="false"
+            :typeSpeed="20"
+          >
+            <h3 class="typing content__left__name" id="name"></h3>
+          </vue-typed-js>
+          <vue-typed-js
+            :strings="aboutText"
+            :contentType="'html'"
+            :showCursor="false"
+            :typeSpeed="20"
+          >
+            <p class="typing content__left__text"></p>
+          </vue-typed-js>
         </div>
         <div class="content__right">
           <figure class="content__right__img shadow">
@@ -50,10 +63,29 @@
 <script>
 import headingTitle from "@/components/headingTitle.vue";
 import background from "@/components/background.vue";
+import Typed from "typed.js";
 export default {
   components: {
     background,
     headingTitle,
+  },
+  data() {
+    return {
+      name: {
+        strings: ["RUI OKAZAKI"],
+      },
+      school: {
+        strings: ["ECCコンピュータ専門学校 WEBデザイナー専攻2年"],
+      },
+      aboutText: {
+        strings: [
+          "私は人の笑顔を見るのが好きです。<br />将来は今勉強しているwebの知識を使って人を笑顔にそして幸せにできる仕事につきたいです。<br />人を幸せにする仕事にフロントエンドが必要ならフロントエンドを勉強し続けます、バックエンドの技術が必要な時はバックエンドを勉強します。<br />私にとってプログラミングは趣味であり、目的を達成する手段でしかありません。<br />ですので、今はwebについて勉強していますが、趣味が変わってアプリが作りたくなった時は、その分野で人を笑顔にしたいと考えています。",
+        ],
+      },
+    };
+  },
+  mounted() {
+    var typed = new Typed(document.getElementById("name"), this.name);
   },
 };
 </script>

@@ -3,13 +3,23 @@
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
-      <h3 class="mv-bg c-t mv-w is-animation delay2">
-        Hi, I'm <span class="c-t mv-p delay2">Rui Okazaki</span><br />I'm a
-        Front End Developer<span class="c-t mv-p delay2">.</span>
-      </h3>
-      <p class="c-t text mv-bg mv-g is-animation delay3">
-        I want you to know about me.
-      </p>
+      <vue-typed-js
+        :strings="im"
+        :contentType="'html'"
+        :showCursor="false"
+        :typeSpeed="20"
+      >
+        <h3 class="typing"></h3>
+      </vue-typed-js>
+      <vue-typed-js
+        :strings="small"
+        :contentType="'html'"
+        :showCursor="false"
+        :typeSpeed="20"
+        :startDelay="2000"
+      >
+        <p class="typing"></p>
+      </vue-typed-js>
     </div>
   </div>
 </template>
@@ -19,7 +29,12 @@ import borderline from "@/components/borderLine.vue";
 import headingTitle from "@/components/headingTitle.vue";
 export default {
   data() {
-    return {};
+    return {
+      im: [
+        "Hi, I'm <span class='c-p'>Rui Okazaki</span><br />I'm a Front End Developer<span class='c-p'>.</span>",
+      ],
+      small: ["<p class='c-g text'>I want you to know about me.</p>"],
+    };
   },
   components: {
     borderline,
@@ -70,7 +85,7 @@ h3 {
   line-height: 68px;
   margin-top: 30px;
 }
-.text {
+p {
   margin-top: 35px;
   font-size: 2.4rem;
   font-weight: bold;
