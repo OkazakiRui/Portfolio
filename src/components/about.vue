@@ -84,7 +84,11 @@ export default {
     };
   },
   mounted() {
-    console.log("hi");
+    if (this.displayBool === false) {
+      window.addEventListener("scroll", () => {
+        this.displayBool = true;
+      });
+    }
   },
 };
 </script>
