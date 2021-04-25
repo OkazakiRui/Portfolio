@@ -6,29 +6,29 @@
       <div class="content f-alibet">
         <div class="content__left">
           <vue-typed-js
-            :strings="school"
+            :strings="texts.school"
             :contentType="'html'"
             :showCursor="false"
             :typeSpeed="20"
-            v-show="false"
+            v-if="displayBool"
           >
             <p class="typing content__left__school c-g"></p>
           </vue-typed-js>
           <vue-typed-js
-            :strings="name"
+            :strings="texts.name"
             :contentType="'html'"
             :showCursor="false"
             :typeSpeed="20"
-            v-show="false"
+            v-if="displayBool"
           >
             <h3 class="typing content__left__name"></h3>
           </vue-typed-js>
           <vue-typed-js
-            :strings="aboutText"
+            :strings="texts.aboutText"
             :contentType="'html'"
             :showCursor="false"
             :typeSpeed="20"
-            v-show="false"
+            v-if="displayBool"
           >
             <p class="typing content__left__text"></p>
           </vue-typed-js>
@@ -73,12 +73,18 @@ export default {
   },
   data() {
     return {
-      name: ["RUI OKAZAKI"],
-      school: ["ECCコンピュータ専門学校 WEBデザイナー専攻2年"],
-      aboutText: [
-        "私は人の笑顔を見るのが好きです。<br />将来は今勉強しているwebの知識を使って人を笑顔にそして幸せにできる仕事につきたいです。<br />人を幸せにする仕事にフロントエンドが必要ならフロントエンドを勉強し続けます、バックエンドの技術が必要な時はバックエンドを勉強します。<br />私にとってプログラミングは趣味であり、目的を達成する手段でしかありません。<br />ですので、今はwebについて勉強していますが、趣味が変わってアプリが作りたくなった時は、その分野で人を笑顔にしたいと考えています。",
-      ],
+      displayBool: false,
+      texts: {
+        name: ["RUI OKAZAKI"],
+        school: ["ECCコンピュータ専門学校 WEBデザイナー専攻2年"],
+        aboutText: [
+          "私は人の笑顔を見るのが好きです。<br />将来は今勉強しているwebの知識を使って人を笑顔にそして幸せにできる仕事につきたいです。<br />人を幸せにする仕事にフロントエンドが必要ならフロントエンドを勉強し続けます、バックエンドの技術が必要な時はバックエンドを勉強します。<br />私にとってプログラミングは趣味であり、目的を達成する手段でしかありません。<br />ですので、今はwebについて勉強していますが、趣味が変わってアプリが作りたくなった時は、その分野で人を笑顔にしたいと考えています。",
+        ],
+      },
     };
+  },
+  mounted() {
+    console.log("hi");
   },
 };
 </script>
