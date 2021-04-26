@@ -10,6 +10,7 @@
             :contentType="'html'"
             :showCursor="false"
             :typeSpeed="20"
+            :startDelay="500"
             v-if="displayBool"
           >
             <p class="typing content__left__school c-g"></p>
@@ -28,6 +29,7 @@
             :contentType="'html'"
             :showCursor="false"
             :typeSpeed="20"
+            :startDelay="1400"
             v-if="displayBool"
           >
             <p class="typing content__left__text"></p>
