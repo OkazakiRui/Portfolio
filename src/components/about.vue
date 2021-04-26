@@ -86,7 +86,9 @@ export default {
   mounted() {
     if (this.displayBool === false) {
       window.addEventListener("scroll", () => {
-        this.displayBool = true;
+        window.setTimeout(() => {
+          this.displayBool = true;
+        }, 700);
       });
     }
   },
