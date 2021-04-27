@@ -9,7 +9,7 @@
           :key="index"
           @click="displayBool = !displayBool"
         >
-          <work :workData="work"></work>
+          <work :workLogo="work.logo"></work>
           <work-window v-if="displayBool" :workData="work"></work-window>
         </div>
       </div>

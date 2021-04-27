@@ -1,7 +1,7 @@
 <template>
   <div class="work">
     <div class="tiltWrap p-re" data-tilt data-tilt-scale="1.05">
-      <figure><img :src="workData.logo" /></figure>
+      <figure><img :src="workLogo" /></figure>
     </div>
   </div>
 </template>
@@ -10,8 +10,8 @@
 import VanillaTilt from "@/scripts/tilt.js";
 export default {
   props: {
-    workData: {
-      type: Object,
+    workLogo: {
+      type: String,
       required: true,
     },
   },
