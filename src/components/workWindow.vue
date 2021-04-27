@@ -22,9 +22,9 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: pink;
 
+  background-color: $gray1;
   font-size: 4rem;
-  color: black;
+  color: $white1;
 }
 </style>
