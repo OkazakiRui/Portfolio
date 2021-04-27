@@ -15,7 +15,6 @@ export default {
       required: true,
     },
   },
-
   methods: {
     VanillaTilt() {
       VanillaTilt.VanillaTilt();

@@ -4,8 +4,13 @@
     <div class="contentWrap">
       <heading-title title="Works"></heading-title>
       <div class="worksWrap f-bet">
-        <div v-for="(work, index) in works" :key="index">
+        <div
+          v-for="(work, index) in works"
+          :key="index"
+          @click="displayBool = !displayBool"
+        >
           <work :workData="work"></work>
+          <work-window v-if="displayBool" :workData="work"></work-window>
         </div>
       </div>
     </div>
@@ -13,6 +18,8 @@
 </template>
 
 <script>
+import workWindow from "@/components/workWindow.vue";
+
 import headingTitle from "@/components/headingTitle.vue";
 import background from "@/components/background.vue";
 import work from "@/components/work.vue";
@@ -61,12 +68,14 @@ export default {
           github: "#",
         },
       },
+      displayBool: false,
     };
   },
   components: {
     background,
     headingTitle,
     work,
+    workWindow,
   },
   methods: {
     mouseover(e) {
