@@ -23,6 +23,7 @@ export default {
   },
   mounted() {
     this.VanillaTilt();
+    console.table([this.workData]);
   },
 };
 </script>
