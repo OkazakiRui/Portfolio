@@ -1,6 +1,8 @@
 <template>
   <div class="workWindow p-fi">
-    {{ workData }}
+    <div class="workWindow__content">
+      {{ workData }}
+    </div>
   </div>
 </template>
 
@@ -22,9 +24,13 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-
-  background-color: $gray1;
-  font-size: 4rem;
-  color: $white1;
+  &__content {
+    width: 100%;
+    height: 100%;
+    padding: 60px 80px;
+    background-color: $gray1;
+    font-size: 4rem;
+    color: $white1;
+  }
 }
 </style>
