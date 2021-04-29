@@ -11,7 +11,7 @@
         >
           <work :workLogo="work.logo"></work>
           <work-window
-            v-if="displayWindow === index ? true : false"
+            v-if="displayIf(index)"
             :workData="work"
             @hiddenWindow="hiddenWindow"
           ></work-window>
@@ -83,7 +83,13 @@ export default {
   },
   methods: {
     hiddenWindow() {
+      this.displayWindow = -1;
       console.log("kon");
+    },
+  },
+  watch: {
+    displayIf(index) {
+      return this.displayWindow === index ? true : false;
     },
   },
 };
