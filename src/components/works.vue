@@ -7,10 +7,14 @@
         <div
           v-for="(work, index) in works"
           :key="index"
-          @click="displayBool = !displayBool"
+          @click="displayWindow = index"
         >
           <work :workLogo="work.logo"></work>
-          <work-window v-if="displayBool" :workData="work"></work-window>
+          <work-window
+            v-if="displayWindow === index ? true : false"
+            :workData="work"
+            @hiddenWindow="hiddenWindow"
+          ></work-window>
         </div>
       </div>
     </div>
@@ -68,7 +72,7 @@ export default {
           github: "#",
         },
       },
-      displayBool: false,
+      displayWindow: -1,
     };
   },
   components: {
@@ -78,8 +82,8 @@ export default {
     workWindow,
   },
   methods: {
-    mouseover(e) {
-      console.log(e);
+    hiddenWindow() {
+      console.log("kon");
     },
   },
 };

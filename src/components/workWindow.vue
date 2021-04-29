@@ -1,5 +1,5 @@
 <template>
-  <div class="workWindow p-fi">
+  <div class="workWindow p-fi flex" @click="hiddenWindow">
     <div class="workWindow__content">
       {{ workData }}
     </div>
@@ -14,6 +14,11 @@ export default {
       required: true,
     },
   },
+  methods: {
+    hiddenWindow() {
+      this.$emit("hiddenWindow");
+    },
+  },
 };
 </script>
 
@@ -24,10 +29,13 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.3);
   &__content {
-    width: 100%;
-    height: 100%;
-    padding: 60px 80px;
+    width: calc(100% - 160px);
+    height: calc(100% - 120px);
+    margin: auto;
+    border-radius: 60px;
+    padding: 60px;
     background-color: $gray1;
     font-size: 4rem;
     color: $white1;
