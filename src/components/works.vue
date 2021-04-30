@@ -7,13 +7,17 @@
         <div
           v-for="(work, index) in works"
           :key="index"
-          @click="displayWindow = index"
+          @click="
+            displayWindow === -1
+              ? (displayWindow = index)
+              : (displayWindow = -1)
+          "
         >
           <work :workLogo="work.logo"></work>
+          <!-- <work-window v-if="true" :workData="work"></work-window> -->
           <work-window
-            v-if="displayIf(index)"
+            v-if="displayWindow === index"
             :workData="work"
-            @hiddenWindow="hiddenWindow"
           ></work-window>
         </div>
       </div>
@@ -34,15 +38,16 @@ export default {
         innerPeaceCafe: {
           title: "InnerPeaceCafe",
           catchcopy: "あなたのお肌、保ちます。",
-          concept:
-            "肌トラブルの改善をコンセプトにしたカフェサイト。<br>女子大学生の一つの悩みである肌トラブルに着目し肌荒れやシミなど、今ある問題だけでなく将来的に起こりうる肌トラブルを食事改善によって身体の内側からアプローチします。肌そのものに備わった美しくなろうとする力を野菜によってサポートし、将来の肌トラブルの発生を未然に防ぎます。",
-          impression: "初めて作ったwebサイト、",
+          concept: "肌トラブルの改善をコンセプトにしたカフェサイト。",
+          impression: "初めて作ったwebサイト",
           usetime: {
             design: 40,
             front: 20,
           },
           tool: "HTML5, SCSS, JavaScript",
           github: "https://github.com/OkazakiRui/InnerPeaceCafe",
+          link: "",
+          img: "",
           logo: "/svg/logo_IPC.svg",
         },
         nomino: {
@@ -80,17 +85,6 @@ export default {
     headingTitle,
     work,
     workWindow,
-  },
-  methods: {
-    hiddenWindow() {
-      this.displayWindow = -1;
-      console.log("kon");
-    },
-  },
-  watch: {
-    displayIf(index) {
-      return this.displayWindow === index ? true : false;
-    },
   },
 };
 </script>
