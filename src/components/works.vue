@@ -14,7 +14,6 @@
           "
         >
           <work :workLogo="work.logo"></work>
-          <!-- <work-window v-if="true" :workData="work"></work-window> -->
           <work-window
             v-if="displayWindow === index"
             :workData="work"
@@ -37,14 +36,12 @@ export default {
       works: {
         innerPeaceCafe: {
           title: "InnerPeaceCafe",
-          catchcopy: "あなたのお肌、保ちます。",
           concept: "肌トラブルの改善をコンセプトにしたカフェサイト。",
-          impression: "初めて作ったwebサイト",
-          usetime: {
-            design: 40,
-            front: 20,
-          },
-          tool: "HTML5, SCSS, JavaScript",
+          motivation: "初めて作ったwebサイト",
+          production: "個人制作",
+          position: "",
+          usetime: 60,
+          tool: "Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript",
           github: "https://github.com/OkazakiRui/InnerPeaceCafe",
           link: "",
           img: "",
@@ -52,29 +49,27 @@ export default {
         },
         nomino: {
           title: "nomino",
-          logo: "/svg/logo_nomino.svg",
-          catchcopy: "",
           concept: "",
-          impression: "",
-          usetime: {
-            design: 200226,
-            front: 200226,
-          },
+          motivation: "",
+          production: "",
+          usetime: "",
           tool: "",
-          github: "#",
+          github: "",
+          link: "",
+          img: "",
+          logo: "/svg/logo_nomino.svg",
         },
         spark: {
           title: "spark",
-          logo: "/svg/logo_spark.svg",
-          catchcopy: "",
           concept: "",
-          impression: "",
-          usetime: {
-            design: 200226,
-            front: 200226,
-          },
+          motivation: "",
+          production: "",
+          usetime: "",
           tool: "",
-          github: "#",
+          github: "",
+          link: "",
+          img: "",
+          logo: "/svg/logo_spark.svg",
         },
       },
       displayWindow: -1,
