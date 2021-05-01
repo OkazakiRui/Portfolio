@@ -10,10 +10,32 @@
           <div class="workWindow__contentWrap__contents__consept"></div>
           <div class="workWindow__contentWrap__contents__motivation"></div>
           <div class="workWindow__contentWrap__contents__other">
-            <div class="workWindow__contentWrap__contents__tool"></div>
-            <div class="workWindow__contentWrap__contents__production"></div>
-            <div class="workWindow__contentWrap__contents__usetime"></div>
-            <div class="workWindow__contentWrap__contents__position"></div>
+            <div class="workWindow__contentWrap__contents__production">
+              <h4 class="workWindow__contentWrap__contents__title">
+                Production
+              </h4>
+              <p class="workWindow__contentWrap__contents__text">
+                {{ workData.production }}
+              </p>
+            </div>
+            <div class="workWindow__contentWrap__contents__position">
+              <h4 class="workWindow__contentWrap__contents__title">Position</h4>
+              <p class="workWindow__contentWrap__contents__text">
+                {{ workData.position }}
+              </p>
+            </div>
+            <div class="workWindow__contentWrap__contents__usetime">
+              <h4 class="workWindow__contentWrap__contents__title">UseTime</h4>
+              <p class="workWindow__contentWrap__contents__text">
+                {{ workData.usetime }}
+              </p>
+            </div>
+            <div class="workWindow__contentWrap__contents__tool">
+              <h4 class="workWindow__contentWrap__contents__title">Tool</h4>
+              <p class="workWindow__contentWrap__contents__text">
+                {{ workData.tool }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
