@@ -153,5 +153,19 @@ export default {
   width: 30px;
   height: 30px;
   background-color: red;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10%;
+    background-color: $black1;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
 }
 </style>
