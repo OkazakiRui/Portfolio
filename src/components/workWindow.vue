@@ -1,15 +1,28 @@
 <template>
   <div class="workWindow p-fi flex">
-    <div class="workWindow__contentWrap">
+    <div class="workWindow__contentWrap f-alibet p-re">
+      <button class="closebtn p-ab"></button>
+
       <h3 class="workWindow__contentWrap__title">{{ workData.title }}</h3>
-      <div class="workWindow__contentWrap__contents flex">
+      <div class="workWindow__contentWrap__contents f-alibet">
         <figure class="workWindow__contentWrap__contents__left">
-          <img src="" :alt="workData.title + 'の画像'" />
+          <img :src="workData.img" :alt="workData.title + 'の画像'" />
         </figure>
+
         <div class="workWindow__contentWrap__contents__right">
-          <div class="workWindow__contentWrap__contents__consept"></div>
-          <div class="workWindow__contentWrap__contents__motivation"></div>
-          <div class="workWindow__contentWrap__contents__other">
+          <div class="workWindow__contentWrap__contents__concept">
+            <h4 class="workWindow__contentWrap__contents__title">Concept</h4>
+            <p class="workWindow__contentWrap__contents__text">
+              {{ workData.concept }}
+            </p>
+          </div>
+          <div class="workWindow__contentWrap__contents__motivation">
+            <h4 class="workWindow__contentWrap__contents__title">Motivation</h4>
+            <p class="workWindow__contentWrap__contents__text">
+              {{ workData.motivation }}
+            </p>
+          </div>
+          <div class="workWindow__contentWrap__contents__other f-bet">
             <div class="workWindow__contentWrap__contents__production">
               <h4 class="workWindow__contentWrap__contents__title">
                 Production
@@ -38,6 +51,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="workWindow__contentWrap__btns f-bet">
+        <p class="workWindow__contentWrap__btns__btn"><a href="#">SITE</a></p>
+        <p class="workWindow__contentWrap__btns__btn"><a href="#">GITHUB</a></p>
       </div>
     </div>
   </div>
@@ -69,12 +86,72 @@ export default {
     height: calc(100% - 120px);
     margin: auto;
     border-radius: 60px;
-    padding: 60px;
+    padding: 30px 40px;
     background-color: $white1;
     color: $black1;
     overflow: scroll;
+    flex-direction: column;
 
-    font-size: 4rem;
+    &__title {
+      font-weight: bold;
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+      text-align: center;
+    }
+
+    &__contents {
+      font-size: 1.8rem;
+      // レイアウト
+      &__left {
+        width: 60%;
+        img {
+          border-radius: 16px;
+          object-fit: cover;
+        }
+      }
+      &__right {
+        width: 38%;
+      }
+      &__other {
+        flex-wrap: wrap;
+        width: 100%;
+        & > div {
+          width: 49%;
+        }
+      }
+
+      // style
+      &__title {
+        font-weight: bold;
+        margin: 8px 0;
+        &::after {
+          content: " />";
+        }
+      }
+    }
+
+    &__btns {
+      width: 470px;
+      height: 62px;
+      &__btn {
+        width: 161px;
+        height: 62px;
+        background: $pink1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 62px;
+        text-align: center;
+        color: $white1;
+      }
+    }
   }
+}
+.closebtn {
+  width: 30px;
+  height: 30px;
+  background-color: red;
 }
 </style>
