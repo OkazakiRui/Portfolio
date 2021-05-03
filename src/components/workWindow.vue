@@ -145,14 +145,18 @@ export default {
         line-height: 62px;
         text-align: center;
         color: $white1;
+        a {
+          width: 100%;
+        }
       }
     }
   }
 }
 .closebtn {
-  width: 30px;
-  height: 30px;
-  background-color: red;
+  width: 40px;
+  height: 40px;
+  top: 35px;
+  right: 35px;
   &::before,
   &::after {
     content: "";
@@ -165,7 +169,7 @@ export default {
     transform: rotate(45deg);
   }
   &::after {
-    transform: translateY(-3px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
   }
 }
 </style>
