@@ -134,6 +134,16 @@ export default {
       width: 470px;
       height: 62px;
       &__btn {
+        width: 161px;
+        height: 62px;
+        background: $pink1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 62px;
+        text-align: center;
         color: $white1;
         a {
           width: 100%;
