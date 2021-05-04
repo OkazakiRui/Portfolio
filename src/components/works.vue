@@ -8,15 +8,16 @@
           v-for="(work, index) in works"
           :key="index"
           @click="
-            displayWindow === -1
+            windowCount === 0
               ? (displayWindow = index)
-              : (displayWindow = -1)
+              : ((displayWindow = -1), (windowCount = 0))
           "
         >
           <work :workLogo="work.logo"></work>
           <work-window
             v-if="displayWindow === index"
             :workData="work"
+            @closeWindow="closeWindow"
           ></work-window>
         </div>
       </div>
@@ -73,6 +74,7 @@ export default {
         },
       },
       displayWindow: -1,
+      windowCount: 0,
     };
   },
   components: {
@@ -83,7 +85,7 @@ export default {
   },
   methods: {
     closeWindow() {
-      this.displayWindow = -1;
+      this.windowCount = 1;
     },
   },
 };
