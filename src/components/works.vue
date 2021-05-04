@@ -7,11 +7,7 @@
         <div
           v-for="(work, index) in works"
           :key="index"
-          @click="
-            displayWindow === -1
-              ? (displayWindow = index)
-              : (displayWindow = -1)
-          "
+          @click="displayWindow = index"
         >
           <work :workLogo="work.logo"></work>
           <work-window
