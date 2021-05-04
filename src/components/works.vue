@@ -7,13 +7,16 @@
         <div
           v-for="(work, index) in works"
           :key="index"
-          @click="displayWindow = index"
+          @click="
+            displayWindow === -1
+              ? (displayWindow = index)
+              : (displayWindow = -1)
+          "
         >
           <work :workLogo="work.logo"></work>
           <work-window
             v-if="displayWindow === index"
             :workData="work"
-            @closeWindow="closeWindow"
           ></work-window>
         </div>
       </div>
@@ -28,11 +31,6 @@ import headingTitle from "@/components/headingTitle.vue";
 import background from "@/components/background.vue";
 import work from "@/components/work.vue";
 export default {
-  methods: {
-    closeWindow() {
-      this.displayWindow = -1;
-    },
-  },
   data() {
     return {
       works: {
@@ -82,6 +80,11 @@ export default {
     headingTitle,
     work,
     workWindow,
+  },
+  methods: {
+    closeWindow() {
+      this.displayWindow = -1;
+    },
   },
 };
 </script>
