@@ -1,7 +1,7 @@
 <template>
   <div class="workWindow p-fi flex">
     <div class="workWindow__contentWrap f-alibet p-re">
-      <button class="closebtn p-ab" @click="closeWindow"></button>
+      <button class="closebtn p-ab" @click="$emit('closeWindow')"></button>
 
       <h3 class="workWindow__contentWrap__title">{{ workData.title }}</h3>
       <div class="workWindow__contentWrap__contents f-alibet">
