@@ -40,7 +40,7 @@ export default {
           concept: "肌トラブルの改善をコンセプトにしたカフェサイト。",
           motivation: "初めて作ったwebサイト",
           production: "個人制作",
-          position: "企画、デザイン、フロントエンド",
+          position: "Planning, Design, FrontEnd",
           usetime: 60,
           tool: "Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript",
           github: "https://github.com/OkazakiRui/InnerPeaceCafe",

@@ -40,7 +40,7 @@
             <div class="workWindow__contentWrap__contents__usetime">
               <h4 class="workWindow__contentWrap__contents__title">UseTime</h4>
               <p class="workWindow__contentWrap__contents__text">
-                {{ workData.usetime }}
+                {{ workData.usetime + "時間" }}
               </p>
             </div>
             <div class="workWindow__contentWrap__contents__tool">
@@ -53,8 +53,12 @@
         </div>
       </div>
       <div class="workWindow__contentWrap__btns f-bet">
-        <p class="workWindow__contentWrap__btns__btn"><a href="#">SITE</a></p>
-        <p class="workWindow__contentWrap__btns__btn"><a href="#">GITHUB</a></p>
+        <p class="workWindow__contentWrap__btns__btn">
+          <a :href="workData.link" target="ruru">SITE</a>
+        </p>
+        <p class="workWindow__contentWrap__btns__btn">
+          <a :href="workData.github" target="ruru">GITHUB</a>
+        </p>
       </div>
     </div>
   </div>
@@ -123,7 +127,8 @@ export default {
       // style
       &__title {
         font-weight: bold;
-        margin: 8px 0;
+        margin-top: 16px;
+        margin-bottom: 4px;
         &::after {
           content: " />";
         }
@@ -145,7 +150,16 @@ export default {
         line-height: 62px;
         text-align: center;
         color: $white1;
+
+        transition: all 0.5s;
+
+        &:active {
+          transform: translateY(4px);
+          box-shadow: none;
+        }
         a {
+          display: block;
+          height: 100%;
           width: 100%;
         }
       }
