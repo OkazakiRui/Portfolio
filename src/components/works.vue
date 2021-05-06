@@ -60,7 +60,7 @@ export default {
           tool: "Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs",
           github: "https://github.com/OkazakiRui/nomino",
           link: "https://click.ecc.ac.jp/ecc/rokazaki/2021_0130_nomino/",
-          img: "/images/",
+          img: "/images/nomino_screen.jpg",
           logo: "/svg/logo_nomino.svg",
         },
         spark: {
