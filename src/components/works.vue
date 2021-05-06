@@ -65,13 +65,16 @@ export default {
         },
         spark: {
           title: "spark",
-          concept: "",
-          motivation: "",
-          production: "",
-          usetime: "",
-          tool: "",
-          github: "",
-          link: "",
+          concept:
+            "「沈黙、会話が続かない、リアクションがしづらい、通話を切るタイミングが見つからない…」Sparkは、そんな気まずさをなくしオンライン通話を楽しくするサービスです。",
+          motivation: "初めて他の人と協力して制作した",
+          production: "グループ制作",
+          position: "Planning, FrontEnd",
+          usetime: "30",
+          tool: "Pug, SCSS, JavaScript, gulp",
+          github: "https://github.com/OkazakiRui/spark",
+          link:
+            "https://click.ecc.ac.jp/ecc/rokazaki/2020_0911_spark/page_index/",
           img: "",
           logo: "/svg/logo_spark.svg",
         },
