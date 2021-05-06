@@ -14,6 +14,7 @@ export default {
     this.name = "岡崎 流依";
     this.age = 19;
     this.birthday = "2002年02月06日";
+    this.live = "Kobe";
     this.phoneNumber = "080-4768-2600";
     this.email = "okazaki200226@gmail.com";
   }

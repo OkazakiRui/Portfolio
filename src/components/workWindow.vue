@@ -12,15 +12,17 @@
         <div class="workWindow__contentWrap__contents__right">
           <div class="workWindow__contentWrap__contents__concept">
             <h4 class="workWindow__contentWrap__contents__title">Concept</h4>
-            <p class="workWindow__contentWrap__contents__text">
-              {{ workData.concept }}
-            </p>
+            <p
+              class="workWindow__contentWrap__contents__text"
+              v-html="workData.concept"
+            ></p>
           </div>
           <div class="workWindow__contentWrap__contents__motivation">
             <h4 class="workWindow__contentWrap__contents__title">Motivation</h4>
-            <p class="workWindow__contentWrap__contents__text">
-              {{ workData.motivation }}
-            </p>
+            <p
+              class="workWindow__contentWrap__contents__text"
+              v-html="workData.motivation"
+            ></p>
           </div>
           <div class="workWindow__contentWrap__contents__other f-bet">
             <div class="workWindow__contentWrap__contents__production">

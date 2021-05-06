@@ -52,7 +52,7 @@ export default {
         nomino: {
           title: "nomino",
           concept:
-            "要らないものを最小限の手間で欲しい人に買って貰い、面倒な作業は全て買い手におまかせ。買い手の手間を最小限にした。面倒臭いがないフリマアプリ。",
+            "要らないものを最小限の手間で欲しい人に買って貰い、面倒な作業は全て買い手におまかせ。<br> 買い手の手間を最小限にした。面倒臭いがないフリマアプリ。",
           motivation: "vuejsを使った初めてのアプリケーション",
           production: "個人制作",
           position: "Planning, Design, FrontEnd",
@@ -64,10 +64,11 @@ export default {
           logo: "/svg/logo_nomino.svg",
         },
         spark: {
-          title: "spark",
+          title: "Spark",
           concept:
-            "Yahoo!さん主催のハッカソン、Open HackU 2020 Volume3にて優秀賞を頂きました。Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。",
-          motivation: "初めて他の人と協力して制作した",
+            "Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。",
+          motivation:
+            "Yahoo!さん主催のハッカソン、Open HackU 2020 Volume3にて優秀賞を頂きました。",
           production: "グループ制作",
           position: "Planning, FrontEnd",
           usetime: "30",
