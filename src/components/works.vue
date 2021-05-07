@@ -46,8 +46,8 @@ export default {
           github: "https://github.com/OkazakiRui/InnerPeaceCafe",
           link:
             "https://click.ecc.ac.jp/ecc/rokazaki/2020_0907_InnerPeaceCafe/",
-          img: "/images/IPC_screen.jpg",
-          logo: "/svg/logo_IPC.svg",
+          img: "./images/IPC_screen.jpg",
+          logo: "./svg/logo_IPC.svg",
         },
         nomino: {
           title: "nomino",
@@ -60,8 +60,8 @@ export default {
           tool: "Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs",
           github: "https://github.com/OkazakiRui/nomino",
           link: "https://click.ecc.ac.jp/ecc/rokazaki/2021_0130_nomino/",
-          img: "/images/nomino_screen.jpg",
-          logo: "/svg/logo_nomino.svg",
+          img: "./images/nomino_screen.jpg",
+          logo: "./svg/logo_nomino.svg",
         },
         spark: {
           title: "Spark",
@@ -75,8 +75,8 @@ export default {
           tool: "Pug, SCSS, JavaScript, gulp",
           github: "https://github.com/OkazakiRui/spark",
           link: "https://raika.link/spark/page_index/",
-          img: "/images/spark_screen.jpg",
-          logo: "/svg/logo_spark.svg",
+          img: "./images/spark_screen.jpg",
+          logo: "./svg/logo_spark.svg",
         },
       },
       displayWindow: -1,
