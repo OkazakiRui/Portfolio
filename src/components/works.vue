@@ -52,7 +52,7 @@ export default {
         nomino: {
           title: "nomino",
           concept:
-            "要らないものを最小限の手間で欲しい人に買って貰い、面倒な作業は全て買い手におまかせ。<br> 買い手の手間を最小限にした。面倒臭いがないフリマアプリ。",
+            "要らないものを最小限の手間で欲しい人に買って貰い、面倒な作業は全て買い手におまかせ。<br> 売り手の手間を最小限にした。面倒臭いがないフリマアプリ。",
           motivation: "vuejsを使った初めてのアプリケーション",
           production: "個人制作",
           position: "Planning, Design, FrontEnd",
