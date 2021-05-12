@@ -101,6 +101,7 @@ export default {
 .content {
   &__left {
     width: 487px;
+    height: 400px;
     &__name {
       font-weight: bold;
       font-size: 4.2rem;
