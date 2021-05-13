@@ -14,11 +14,14 @@
           "
         >
           <work :workLogo="work.logo"></work>
-          <work-window
-            v-if="displayWindow === index"
-            :workData="work"
-            @closeWindow="closeWindow"
-          ></work-window>
+
+          <transition name="fade">
+            <work-window
+              v-if="displayWindow === index"
+              :workData="work"
+              @closeWindow="closeWindow"
+            ></work-window>
+          </transition>
         </div>
       </div>
     </div>
@@ -96,3 +99,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.works {
+  &Wrap {
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 50px 60px;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
