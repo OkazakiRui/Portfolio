@@ -96,13 +96,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.works {
-  &Wrap {
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 50px 60px;
-  }
-}
-</style>
