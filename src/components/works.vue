@@ -39,8 +39,9 @@ export default {
       works: {
         innerPeaceCafe: {
           title: "InnerPeaceCafe",
-          concept: "肌トラブルの改善をコンセプトにしたカフェサイト。",
-          motivation: "初めて作ったwebサイト",
+          concept:
+            "InnerPeaceCafeは女子大生の悩みである肌トラブルを解決するために作られたカフェです。<br>一人一人に寄り添いその人にあったメニューを提供することが出来ます。",
+          motivation: "HTML, CSSを勉強し、初めて作成したwebサイトです。",
           production: "個人制作",
           position: "Planning, Design, FrontEnd",
           usetime: 60,
@@ -54,8 +55,9 @@ export default {
         nomino: {
           title: "nomino",
           concept:
-            "要らないものを最小限の手間で欲しい人に買って貰い、面倒な作業は全て買い手におまかせ。<br> 売り手の手間を最小限にした。面倒臭いがないフリマアプリ。",
-          motivation: "vuejsを使った初めてのアプリケーション",
+            "nominoは売り手の手間を最小限にした。面倒臭いがないフリマアプリです。<br>買い手がすぐ見つかり従来のフリマアプリとは違いスピーディーな取引が可能です。",
+          motivation:
+            "vuejsの勉強のために作成した初めてのスマートフォン向けwebアプリケーションです。",
           production: "個人制作",
           position: "Planning, Design, FrontEnd",
           usetime: 16,
@@ -68,9 +70,9 @@ export default {
         spark: {
           title: "Spark",
           concept:
-            "Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。",
+            "Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。<br>無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。",
           motivation:
-            "Yahoo!さん主催のハッカソン、Open HackU 2020 Volume3にて優秀賞を頂きました。",
+            "Yahoo!さん主催のハッカソン、OpenHackU2020 Volume3で作成し、優秀賞を頂きました。",
           production: "グループ制作",
           position: "Planning, FrontEnd",
           usetime: "30",

@@ -43,6 +43,7 @@ export default {
     headingTitle,
   },
   mounted() {
+    // background settings
     this.vantaEffect = BIRDS({
       el: this.$refs.vantaRef,
       mouseControls: true,

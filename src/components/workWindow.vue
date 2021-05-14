@@ -144,6 +144,10 @@ export default {
           content: " />";
         }
       }
+
+      &__text {
+        opacity: 0.9;
+      }
     }
 
     &__btns {
