@@ -18,7 +18,7 @@ if($name !== "" && $email !== "" && $comments !== ""){
 }
 
 
-header("location: http://localhost:8080/")
+header("location: https://click.ecc.ac.jp/ecc/rokazaki/2021_0507_portfolio_v1/")
 
 
 
