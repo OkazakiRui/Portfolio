@@ -1,5 +1,5 @@
 <template>
-  <div id="start" class="start f-ali">
+  <div id="start" class="start f-ali" ref="vantaRef">
     <div class="contentWrap p-re">
       <borderline></borderline>
       <heading-title title="Start"></heading-title>
@@ -27,6 +27,8 @@
 <script>
 import borderline from "@/components/borderLine.vue";
 import headingTitle from "@/components/headingTitle.vue";
+import BIRDS from "@/scripts/vanta.birds.min.js";
+
 export default {
   data() {
     return {
@@ -39,6 +41,31 @@ export default {
   components: {
     borderline,
     headingTitle,
+  },
+  mounted() {
+    this.vantaEffect = BIRDS({
+      el: this.$refs.vantaRef,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      scale: 1,
+      scaleMobile: 1,
+      backgroundColor: "#110e17",
+      color1: "#4f0f4c",
+      color2: "#4f0f4c",
+      colorMode: "variance",
+      birdSize: 1,
+      wingSpan: 20,
+      speedLimit: 8,
+      separation: 29,
+      alignment: 33,
+      cohesion: 50,
+    });
+  },
+  beforeDestroy() {
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy();
+    }
   },
 };
 </script>
