@@ -17,7 +17,7 @@
 
           <transition name="fade">
             <work-window
-              v-if="displayWindow === index"
+              v-show="displayWindow === index"
               :workData="work"
               @closeWindow="closeWindow"
             ></work-window>

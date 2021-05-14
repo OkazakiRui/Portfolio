@@ -77,6 +77,54 @@ class Cursor {
           this.wrap_el.classList.remove("is-hover");
         });
       }
+      // list
+      let li = document.querySelectorAll("li");
+      for (const target of li) {
+        target.addEventListener("mouseenter", () => {
+          this.eventStatus.hover = true;
+          this.wrap_el.classList.add("is-hover");
+        });
+        target.addEventListener("mouseleave", () => {
+          this.eventStatus.hover = false;
+          this.wrap_el.classList.remove("is-hover");
+        });
+      }
+      // work
+      let works = document.querySelectorAll(".work > div");
+      for (const target of works) {
+        target.addEventListener("mouseenter", () => {
+          this.eventStatus.hover = true;
+          this.wrap_el.classList.add("is-hover");
+        });
+        target.addEventListener("mouseleave", () => {
+          this.eventStatus.hover = false;
+          this.wrap_el.classList.remove("is-hover");
+        });
+      }
+      // input
+      let input = document.querySelectorAll("input");
+      for (const target of input) {
+        target.addEventListener("mouseenter", () => {
+          this.eventStatus.hover = true;
+          this.wrap_el.classList.add("is-hover");
+        });
+        target.addEventListener("mouseleave", () => {
+          this.eventStatus.hover = false;
+          this.wrap_el.classList.remove("is-hover");
+        });
+      }
+      // textarea
+      let textarea = document.querySelectorAll("textarea");
+      for (const target of textarea) {
+        target.addEventListener("mouseenter", () => {
+          this.eventStatus.hover = true;
+          this.wrap_el.classList.add("is-hover");
+        });
+        target.addEventListener("mouseleave", () => {
+          this.eventStatus.hover = false;
+          this.wrap_el.classList.remove("is-hover");
+        });
+      }
     });
 
     // observer開始

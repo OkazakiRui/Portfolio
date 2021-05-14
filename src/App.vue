@@ -15,7 +15,7 @@ export default {
 * {
   font-family: "Roboto Condensed", sans-serif;
   // font-family: 'Roboto Mono', monospace;
-  // cursor: none;
+  cursor: none;
 }
 html {
   font-size: 62.5%;
@@ -100,7 +100,7 @@ img {
 .stoker {
   width: 40px;
   height: 40px;
-  background: red;
+  background: $pink1;
   z-index: 10000;
   transition: opacity 0.2s 0.2s, background 0.2s;
   .is-move & {

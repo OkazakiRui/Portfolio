@@ -30,7 +30,6 @@ export default {
 <style lang="scss" scoped>
 .work {
   perspective: 1000px;
-  cursor: pointer;
 }
 .tiltWrap {
   display: flex;

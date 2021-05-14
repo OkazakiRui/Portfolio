@@ -149,7 +149,6 @@ button,
 [type="reset"],
 [type="submit"],
 [role="button"] {
-  cursor: pointer;
 }
 
 /* Replace pointer cursor in disabled elements */
@@ -308,7 +307,6 @@ video {
 
 /* Specify the pointer cursor of trigger elements */
 [aria-controls] {
-  cursor: pointer;
 }
 
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */

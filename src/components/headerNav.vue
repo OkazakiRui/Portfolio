@@ -117,7 +117,7 @@ h1 {
 }
 li {
   margin-left: 20px;
-  cursor: pointer;
+
   // transition: all 0.3s;
   &:hover {
     color: $white1;
