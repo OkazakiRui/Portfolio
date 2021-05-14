@@ -1,5 +1,9 @@
 <template>
   <div class="workWindow p-fi flex">
+    <div
+      class="workWindow__background p-ab flex"
+      @click="$emit('closeWindow')"
+    ></div>
     <div class="workWindow__contentWrap f-alibet p-re">
       <button class="closebtn p-ab" @click="$emit('closeWindow')"></button>
 
@@ -84,7 +88,12 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba($color: #000000, $alpha: 0.3);
+  &__background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
   &__contentWrap {
     min-width: 1020px;
     min-height: 650px;

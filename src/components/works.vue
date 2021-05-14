@@ -29,11 +29,10 @@
 </template>
 
 <script>
-import workWindow from "@/components/workWindow.vue";
-
-import headingTitle from "@/components/headingTitle.vue";
 import background from "@/components/background.vue";
+import headingTitle from "@/components/headingTitle.vue";
 import work from "@/components/work.vue";
+import workWindow from "@/components/workWindow.vue";
 export default {
   data() {
     return {
