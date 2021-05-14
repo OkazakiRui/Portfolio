@@ -76,6 +76,12 @@ export default {
       return afterCode;
     },
   },
+  mounted() {
+    const codeWrap = document.querySelectorAll(".codeWrap");
+    codeWrap.forEach((element, index) => {
+      element.setAttribute("data-value", index + 1);
+    });
+  },
 };
 </script>
 
