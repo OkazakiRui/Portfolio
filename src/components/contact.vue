@@ -34,6 +34,6 @@ export default {
 }
 .borderline {
   top: 0;
-  height: 20000px;
+  height: 5000px;
 }
 </style>
