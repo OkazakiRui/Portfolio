@@ -18,13 +18,13 @@ export default {
     this.email = "okazaki200226@gmail.com";
   }
   programmingLanguage() {
-    return [ "HTML5", "CSS", "JavaScript", "PHP", "MySQL", "Pug", "SCSS", "Vuejs", "jQuery", "TypeScript", "ejs" ];
+    return [ "HTML5", "CSS", "JavaScript", "jQuery", "ejs", "PHP", "MySQL", "Pug", "SCSS", "Vue.js", "TypeScript", "React", "Swift" ];
   }
   mainLanguage() {
-    return [ "HTML5", "CSS", "JavaScript", "SCSS", "Vuejs" ];
+    return [ "HTML5", "CSS", "JavaScript", "SCSS", "Vue.js" ];
   }
   tools() {
-    return [ "VisualStudioCode", "Figma", "Photoshop", "Illustrator", "AfterEffects", "Premiere", "XD", "InDesign" ];
+    return [ "VisualStudioCode", "Figma", "Photoshop", "Illustrator", "AfterEffects", "Premiere", "XD", "InDesign", "Xcode" ];
   }
 }
 `,
