@@ -11,6 +11,12 @@ export default {
     window.addEventListener("scroll", this.colorChange);
   },
   methods: {
+    colorChange() {
+      const bar = document.getElementById("bar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      let barHeight = (window.pageYOffset / totalHeight) * 100;
+      bar.style.height = barHeight + "%";
+    },
   },
 };
 </script>
