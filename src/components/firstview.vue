@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       im: [
-        "Hi, I'm <span class='c-p'>Rui Okazaki</span><br />I'm a Front End Developer<span class='c-p'>.</span>",
+        "Hi, I'm <span class='c-p'>Rui Okazaki</span><br />I'm a Application Engineer<span class='c-p'>.</span>",
       ],
       small: ["<p class='c-g text'>I want you to know about me.</p>"],
     };
