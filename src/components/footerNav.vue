@@ -8,7 +8,7 @@
         <a href="https://github.com/OkazakiRui" target="ruru"
           ><img src="@/assets/svg/github.svg"
         /></a>
-        <a href="https://twitter.com/ruru_FrontEnd" target="ruru"
+        <a href="https://twitter.com/yoruhanemutaiyo" target="ruru"
           ><img src="@/assets/svg/twitter.svg"
         /></a>
       </div>
