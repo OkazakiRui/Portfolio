@@ -50,7 +50,7 @@ export default {
     getElNames() {
       const lists = document.querySelectorAll(".header__lists");
       lists.forEach((el) => {
-        this.elNames.push(el.textContent.split(" ")[1].toLowerCase());
+        this.elNames.push(el.textContent.split(" ")[8].toLowerCase());
       });
     },
     scrollAction() {

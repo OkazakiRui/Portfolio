@@ -21,10 +21,10 @@ export default {
     return [ "HTML5", "CSS", "JavaScript", "PHP", "MySQL", "Pug", "SCSS", "Vue.js", "React", "jQuery", "TypeScript", "ejs", "Python", "Swift" ];
   }
   mainLanguage() {
-    return [ "HTML5", "CSS", "JavaScript", "SCSS", "Vue.js", "Swift" ];
+    return [ "HTML5", "CSS", "JavaScript", "TypeScript", "SCSS", "Vue.js", "React", "Swift" ];
   }
   tools() {
-    return [ "VisualStudioCode", "Figma", "Photoshop", "Illustrator", "AfterEffects", "Premiere", "XD", "InDesign" ];
+    return [ "VisualStudioCode", "IntelliJ IDEA", "Figma", "Photoshop", "Illustrator", "AfterEffects", "Premiere", "XD", "InDesign" ];
   }
 }
 `,
@@ -77,9 +77,9 @@ export default {
     },
   },
   mounted() {
-    const codeWrap = document.querySelectorAll(".codeWrap");
+    const codeWrap = document.querySelectorAll('.codeWrap');
     codeWrap.forEach((element, index) => {
-      element.setAttribute("data-value", index + 1);
+      element.setAttribute('data-value', index + 1);
     });
   },
 };
