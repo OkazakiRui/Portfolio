@@ -186,6 +186,7 @@ export default {
   &__col1 {
     margin-bottom: 60px;
   }
+  
 
   &__label {
     left: 6px;
@@ -235,8 +236,8 @@ export default {
   .focusborder {
     background-color: $pink1;
     width: 100%;
-    height: 2px;
     bottom: 0;
+    height: 2px;
     transform-origin: center center;
     transform: scaleX(0);
     transition: all 0.3s;

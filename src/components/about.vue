@@ -146,6 +146,5 @@ export default {
 }
 .shadow {
   filter: drop-shadow(0px 0px 4px #000000);
-  filter: drop-shadow(0px 0px 4px #000000);
 }
 </style>
